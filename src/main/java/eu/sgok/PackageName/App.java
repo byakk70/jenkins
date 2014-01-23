@@ -1,5 +1,7 @@
 package eu.sgok.PackageName;
 
+import org.slf4j.*;
+
 /**
  * Hello world!
  *
@@ -8,6 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hier heb ik Hello World veranderd. Ik heb het weer veranderd" );
+	Logger logger = LoggerFactory.getLogger(App.class);
+	logger.info("Hier heb ik Hello World veranderd. Ik heb het weer veranderd");
     }
 }
